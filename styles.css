@@ -1,0 +1,95 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+header {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 70% 30%; /* Create two columns with 70% and 30% width */
+    grid-template-rows: auto auto; /* Create two rows with automatic height */
+    grid-gap: 10px; /* Add some space between the grid items */
+    margin: 20px;
+}
+#subscription-form-container {
+    grid-area: 1 / 2 / 2 / 3; /* Place the element in the first row and second column */
+    padding-inline-start: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;   
+}
+
+#job-listings {
+    inline-size: 70%;
+    margin-inline-end: 10px; 
+}
+#job-listings .job {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-block-end: 10px;
+}
+
+#job-listings .job-apply {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+#search-input{
+    inline-size: 50%;
+}
+
+#subscribe-section {
+    inline-size: 30%;
+    padding-inline-start: 10px;
+    
+}
+#subscribe-form {
+    background: white;
+    padding: 10px;
+    border: 10px solid #ddd;
+}
+
+#subscribe-form h3 {
+    margin-block-start: 0; 
+}
+
+#subscribe-form form {
+    display: flex;
+    flex-direction: column;   
+}
+
+#subscribe-form input,
+#subscribe-form button {
+    padding: 10px;
+    margin-block-end: 10px;
+}
+
+#subscribe-form label {
+    font-size: 0.9em;
+    margin-block-end: 10px;
+}
+
+#subscribe-form button {
+    background: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#subscribe-form button:hover {
+    background: #4cae4c;
+}

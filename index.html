@@ -1,0 +1,110 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Careers Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>IT Jobs</h1>
+    <section id="job-search">
+        <input type="text" id="search-input" placeholder="Search Jobs" oninput="filterJobs()">
+    </section>
+  </header>
+  <main class="container">
+      <section id="job-listings">
+            <ul id="job-listings">
+                <li class="job">
+                    <h3 class="job-title">Software Engineer</h3>
+                    <p class="job-type">Employment Type: Part Time</p>
+                    <p class="job-location">Location: San Francisco, CA</p>
+                    <p class="job-date">Posted Date: Jan 15, 2024</p>
+                    <button class="job-apply">Apply Now</button>
+                </li>
+                <li class="job">
+                    <h3 class="job-title">Project Manager</h3>
+                    <p class="job-type">Employment Type: Full Time</p>
+                    <p class="job-location">Location: Chicago, IL</p>
+                    <p class="job-date">Posted Date: Jan 03, 2024</p>
+                    <button class="job-apply">Apply Now</button>
+                </li>
+                <li class="job">
+                    <h3 class="job-title">Web Developer</h3>
+                    <p class="job-type">Employment Type: Full Time</p>
+                    <p class="job-location">Location: New York, NY</p>
+                    <p class="job-date">Posted Date: Jan 31, 2024</p>
+                    <button class="job-apply">Apply Now</button>
+                </li>
+                <li class="job">
+                    <h3 class="job-title">QA Tester</h3>
+                    <p class="job-type">Employment Type: Part Time</p>
+                    <p class="job-location">Location: Austin, TX</p>
+                    <p class="job-date">Posted Date: Jan 26, 2024</p>
+                    <button class="job-apply">Apply Now</button>
+                </li>
+                <li class="job">
+                    <h3 class="job-title">UX Designer</h3>
+                    <p class="job-type">Employment Type: Contrat</p>
+                    <p class="job-location">Location: Boston, MA</p>
+                    <p class="job-date">Posted Date: Jan 28, 2024</p>
+                    <button class="job-apply">Apply Now</button>
+                </li>
+                <li class="job">
+                    <h3 class="job-title">Database Administrator</h3>
+                    <p class="job-type">Employment Type: Contract</p>
+                    <p class="job-location">Location: Los Angeles, CA</p>
+                    <p class="job-date">Posted Date: Jan 26, 2024</p>
+                    <button class="job-apply">Apply Now</button>
+                <li class="job">
+                    <h3 class="job-title">Front-end Developer</h3>
+                    <p class="job-type">Employment Type: Contract</p>
+                    <p class="job-location">Location: Denver, CA</p>
+                    <p class="job-date">Posted Date: Jan 24, 2024</p>
+                    <button class="job-apply">Apply Now</button>
+                </li>
+                <li class="job">
+                    <h3 class="job-title">Back-end Developer</h3>
+                    <p class="job-type">Employment Type: Part Time</p>
+                    <p class="job-location">Location: Miami, FL</p>
+                    <p class="job-date">Posted Date: Jan 23, 2024</p>
+                    <button class="job-apply">Apply Now</button>
+                </li>
+                <li class="job">
+                    <h3 class="job-title">DevOps Engineer</h3>
+                    <p class="job-type">Employment Type: Full Time</p>
+                    <p class="job-location">Location: Atlanta, GA</p>
+                    <p class="job-date">Posted Date: Jan 22, 2024</p>
+                    <button class="job-apply">Apply Now</button>
+                </li>
+                <li class="job">
+                    <h3 class="job-title">Data Analyst</h3>
+                    <p class="job-type">Employment Type: Contract</p>
+                    <p class="job-location">Location: Seattle, WA</p>
+                    <p class="job-date">Posted Date: Jan 19, 2024</p>
+                    <button class="job-apply">Apply Now</button>
+                </li>
+            </li>
+            </ul>
+    </section>
+ <aside id="subscribe-section">
+   <div id="subscribe-form">
+        <h3>Sign Up For Job Alerts!</h3>
+  <form id="subscription-form" onsubmit="handleSubscription(event)">
+    <input type="email" id="email" placeholder="Email">
+    <input type="text" id="location-input" placeholder="Location">
+    <input type="checkbox" id="terms-checkbox"> I agree to the terms of service and privacy policy
+    <button type="submit">Send Me Jobs</button>
+    <button type="submit">Subscribe</button>
+    <button type="reset">Reset</button>
+  </form>
+   </div>
+ </aside>
+</main>
+  
+  <script src="script.js"></script> 
+</body>
+</html>
